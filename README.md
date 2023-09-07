@@ -29,6 +29,12 @@ To use FastCryptoUtils in your Maven project, add the following dependency to yo
 ## Usage
 After adding the dependency, you can use the FastCryptoUtils library in your Java code.
 
+#### Example
+```java
+byte[] hash = MD5Algorithm.hash("Hello World!".getBytes());
+```
+or check our testcase!
+
 ## Acceleration Dependencies
 
 FastCryptoUtils leverages acceleration libraries in your local environment to speed up cryptographic processes. Upon startup, the application will connect to our servers to check if the versions of your local acceleration libraries meet the requirements for acceleration. We dynamically adjust the required version numbers based on our ongoing support and testing.
